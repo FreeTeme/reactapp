@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/Layout";
+import LandingPage from "./components/LandingPage"; // Новый импорт
 import BloggerDashboard from "./pages/blogger/Dashboard";
 import BloggerReviews from "./pages/blogger/Reviews";
 import BloggerSocials from "./pages/blogger/Socials";
@@ -19,6 +20,9 @@ import AdminAnalytics from "./pages/admin/Analytics";
 function App() {
   return (
     <Routes>
+      {/* Лендинг */}
+      <Route path="/" element={<LandingPage />} />
+
       {/* Блогер */}
       <Route path="/blogger" element={<Layout role="blogger" />}>
         <Route index element={<BloggerDashboard />} />
@@ -45,8 +49,8 @@ function App() {
         <Route path="analytics" element={<AdminAnalytics />} />
       </Route>
 
-      {/* По умолчанию редиректим */}
-      <Route path="*" element={<Navigate to="/blogger" replace />} />
+      {/* Редирект для неизвестных маршрутов */}
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
