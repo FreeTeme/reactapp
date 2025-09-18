@@ -366,9 +366,9 @@ const LandingPage = () => {
           <a href="#contacts">Контакты</a>
         </nav>
         <div className="social-links">
-          <a href="https://instagram.com">Instagram</a>
-          <a href="https://twitter.com">Twitter</a>
-          <a href="https://facebook.com">Facebook</a>
+          <a href="https://www.instagram.com/most.plt?igsh=M2lrcjA4bGk0aGJv
+">Instagram</a>
+          <a href="https://www.linkedin.com/company/most-plt/posts/?feedView=all">Linkedln</a>
         </div>
         <p>&copy; 2025 MOST</p>
       </footer>
